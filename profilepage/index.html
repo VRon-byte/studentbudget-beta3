@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Texas Tech | Student Budget</title>
+  <link rel="stylesheet" href="style.css" />
+  <!--<script src="https://unpkg.com/lucide@latest" defer></script>-->
+  <!--<script src="script.js" defer></script>-->
+</head>
+<body>
+  <header class="site-header">
+    <img src="images/texastech.png" alt="Texas Tech Logo" class="tech-logo">
+    <!--
+    <div class="brand">
+      <div class="tech-mark" aria-label="Texas Tech logo">T<span>T</span></div>
+      <div>
+        <div class="brand-name">TEXAS TECH</div>
+        <div class="brand-subtitle">Student Budget</div>
+      </div>
+    </div>
+    -->
+    <button class="icon-button profile-shortcut" aria-label="Profile">
+      <!--<i data-lucide="circle-user-round"></i>-->
+      <img src="images/usericon.png" alt="Profile Button" class="profile-button">
+    </button>
+  </header>
+
+  <main>
+    <section class="profile-grid" aria-label="Student profile">
+      <div class="profile-details">
+        <!--<i class="avatar" data-lucide="circle-user-round" aria-hidden="true"></i>-->
+        <img src="images/profilepicture.png" alt="Profile Picture" class="profile-picture">
+        <div class="identity">
+          <h1>John Doe</h1>
+          <p>School</p>
+          <p>Major</p>
+          <p>Graduation Year</p>
+        </div>
+      </div>
+      <div class="contact-details">
+        <div class="contact-line">
+          <!--<i data-lucide="phone" aria-hidden="true"></i>-->
+          <img src="images/phone.png" alt="Phone" class="phone-image">
+          <div>
+            <p>000-000-0000</p>
+            <span>Phone Number</span>
+          </div>
+        </div>
+        <div class="contact-line">
+          <!--<i data-lucide="mail" aria-hidden="true"></i>-->
+          <img src="images/mail.png" alt="Mail" class="mail-image">
+          <div>
+            <p>john.doe@email.com</p>
+            <span>School Email</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="settings-grid" aria-label="Account preferences">
+      <div class="settings-left">
+        <div class="settings-group">
+          <h2>Account Settings:</h2>
+          <label class="field-row">Email: <input type="email" aria-label="Account email" /></label>
+          <label class="field-row">Password: <input type="password" aria-label="Account password" /></label>
+        </div>
+        <div class="settings-group notifications">
+          <h2>Notifications:</h2><label><input type="checkbox" /> send notifications email</label>
+          <label><input type="checkbox" /> text notifications</label>
+          <label><input type="checkbox" /> push notifications</label>
+        </div>
+        <div class="left-actions">
+          <button class="secondary-button" id="terms">View Terms/Conditions</button>
+          <button class="secondary-button" id="help">Get Help</button>
+        </div>
+      </div>
+      <div class="settings-right">
+        <div class="settings-group">
+          <h2>Connected Accounts</h2>
+          <label class="field-row">Banks: <input type="text" aria-label="Connected banks" /></label>
+        </div>
+        <div class="right-actions">
+          <button class="danger-button" id="delete">Delete Account</button>
+          <button class="danger-button" id="logout">Log Out <i data-lucide="log-out" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <button class="nav-item active" aria-label="Home" title="Home">
+      <!--<i data-lucide="house"></i>-->
+      <img src="images/home.png" alt="Home" class="home-button">
+    </button>
+    <button class="nav-item" aria-label="Transactions" title="Transactions">
+      <!--<i data-lucide="list"></i>-->
+      <img src="images/budget.png" alt="Budget" class="budget-button">
+    </button>
+    <button class="nav-item" aria-label="Budget analytics" title="Budget analytics">
+      <!--<i data-lucide="chart-pie"></i>-->
+      <img src="images/chart.png" alt="Chart" class="chart-button">
+    </button>
+  </nav>
+  <!--
+  <dialog id="message-dialog">
+    <p id="dialog-message"></p>
+    <button id="close-dialog">Close</button>
+  </dialog>
+  -->
+</body>
+</html>
