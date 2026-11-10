@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Budget - Budget & Meals</title>
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="top-nav">
+    <div class="logo-group">
+      <img src="logo.png" alt="" class="ttu-logo">
+      <div class="logo-text-group">
+        <span class="logo-text">TEXAS TECH</span>
+        <span class="logo-subtext">Student Budget</span>
+      </div>
+    </div>
+    <a href="settings.html" aria-label="Account Settings">
+      <img class="profile-avatar" src="userA.png" alt="User profile settings avatar">
+    </a>
+  </header>
+
+  <div class="page-header">
+    <h1 class="budget-meals-title">Budget &amp; Meals</h1>
+  </div>
+
+  <main class="dashboard-layout">
+    
+    <!-- Left Column: Fixed 630px Width -->
+    <div class="left-column">
+      
+      <section class="card budget-summary-card">
+        <div class="card-header-flex">
+          <img src="calendar.png" alt="" class="card-icon">
+          <h2>Monthly Budget</h2>
+        </div>
+        
+        <div class="summary-primary">
+          <span class="amount">$800.00</span>
+          <div class="total-progress-section">
+            <div class="progress-bar-bg total-progress-bg" aria-label="Total Monthly Budget Progress: 40% used">
+              <div class="progress-fill fill-total w-40"></div>
+            </div>
+            <span class="category-stats-bold">$314.75 spent (40%)</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card category-budgets-card">
+        <div class="card-header-flex">
+          <img src="category.png" alt="" class="card-icon">
+          <h2>Category Budgets</h2>
+        </div>
+        
+        <table class="category-table">
+          <tbody>
+            <tr>
+              <th scope="row">
+                <div class="cat-title">Food</div>
+                <div class="stats-cell">$100.25 / $250</div>
+              </th>
+              <td class="progress-cell">
+                <div class="progress-bar-bg" aria-label="Food Budget Progress: 40% used">
+                  <div class="progress-fill fill-food w-40"></div>
+                </div>
+              </td>
+              <td class="left-cell">$149.75 left</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="cat-title">School</div>
+                <div class="stats-cell">$75.00 / $150</div>
+              </th>
+              <td class="progress-cell">
+                <div class="progress-bar-bg" aria-label="School Budget Progress: 50% used">
+                  <div class="progress-fill fill-school w-50"></div>
+                </div>
+              </td>
+              <td class="left-cell">$75.00 left</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="cat-title">Entertainment</div>
+                <div class="stats-cell">$60.00 / $100</div>
+              </th>
+              <td class="progress-cell">
+                <div class="progress-bar-bg" aria-label="Entertainment Budget Progress: 60% used">
+                  <div class="progress-fill fill-entertainment w-60"></div>
+                </div>
+              </td>
+              <td class="left-cell">$40.00 left</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="cat-title">Shopping</div>
+                <div class="stats-cell">$45.50 / $100</div>
+              </th>
+              <td class="progress-cell">
+                <div class="progress-bar-bg" aria-label="Shopping Budget Progress: 45% used">
+                  <div class="progress-fill fill-shopping w-45"></div>
+                </div>
+              </td>
+              <td class="left-cell">$54.50 left</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="cat-title">Other</div>
+                <div class="stats-cell">$35.00 / $100</div>
+              </th>
+              <td class="progress-cell">
+                <div class="progress-bar-bg" aria-label="Other Budget Progress: 35% used">
+                  <div class="progress-fill fill-other w-35"></div>
+                </div>
+              </td>
+              <td class="left-cell">$65.00 left</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+
+    <!-- Right Column: Fixed 630px Width -->
+    <div class="right-column">
+      
+      <section class="card meal-balance-card">
+        <div class="card-header-flex">
+          <img src="lunch.png" alt="" class="card-icon">
+          <h2>Meal Balance</h2>
+        </div>
+        
+        <div class="balance-grid">
+          <div class="summary-item">
+            <span class="amount">$185.00</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Meals Remaining</span>
+            <span class="amount-small">12</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Weekly Spending</span>
+            <span class="amount-small">$38.20</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card meal-activity-card">
+        <div class="card-header-flex">
+          <img src="lunch.png" alt="" class="card-icon">
+          <h2>Recent Meal Activity</h2>
+        </div>
+        
+        <table class="activity-table">
+          <tbody>
+            <tr>
+              <th scope="row">
+                <div class="vendor">Chick-fil-A</div>
+                <div class="sub-label">Food</div>
+              </th>
+              <td class="expense-cell">
+                <div class="expense">-$10.50</div>
+                <div class="date-label">Oct 8</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="vendor">Student Union</div>
+                <div class="sub-label">Food</div>
+              </th>
+              <td class="expense-cell">
+                <div class="expense">-$8.50</div>
+                <div class="date-label">Oct 1</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="vendor">Starbucks</div>
+                <div class="sub-label">Food</div>
+              </th>
+              <td class="expense-cell">
+                <div class="expense">-$7.75</div>
+                <div class="date-label">Sep 21</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="vendor">Pizzahut</div>
+                <div class="sub-label">Food</div>
+              </th>
+              <td class="expense-cell">
+                <div class="expense">-$6.99</div>
+                <div class="date-label">Sep 14</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="vendor">Cane’s</div>
+                <div class="sub-label">Food</div>
+              </th>
+              <td class="expense-cell">
+                <div class="expense">-$6.80</div>
+                <div class="date-label">Aug 28</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="vendor">Dutch Bros Coffee</div>
+                <div class="sub-label">Food</div>
+              </th>
+              <td class="expense-cell">
+                <div class="expense">-$8.85</div>
+                <div class="date-label">Aug 10</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="balance.html" aria-label="Go to Balance and Activity">
+      <img class="nav-icon" src="activity2.png" alt="Activity dashboard view">
+    </a>
+    <a href="budget-meals.html" aria-label="Go to Budget and Meals">
+      <img class="nav-icon" src="pie-chart1.png" alt="Budget breakdown overview">
+    </a>
+    <a href="dashboard.html" aria-label="Go to Dashboard">
+      <img class="nav-icon" src="house-black-silhouette-without-door1.png" alt="Dashboard home screen">
+    </a>
+  </nav>
+</body>
+</html>
+<!--
+<div class="angelina" ><div class="text-wrapper" >Oct 8</div>
+<div class="div" >Aug 10</div>
+<div class="group" ><div class="group-wrapper" ><div class="div-wrapper" ><div class="group-2" ><div class="rectangle" ></div>
+<div class="rectangle-2" ></div>
+<div class="rectangle-3" ></div>
+<div class="budget-meals" >Budget &amp; Meals</div>
+<div class="text-wrapper-2" >Monthly Budget</div>
+<div class="text-wrapper-3" >$800.00</div>
+<div class="text-wrapper-4" >Meal Balance</div>
+<div class="text-wrapper-5" >Meals Remaining</div>
+<div class="text-wrapper-6" >$100.25 / $250</div>
+<div class="text-wrapper-7" >$314.75 spent (40%)</div>
+<div class="text-wrapper-8" >$75.00 / $150</div>
+<div class="text-wrapper-9" >$60.00 / $100</div>
+<div class="text-wrapper-10" >$45.50 / $100</div>
+<div class="text-wrapper-11" >$35.00 / $100</div>
+<div class="text-wrapper-12" >$149.75 left</div>
+<div class="text-wrapper-13" >$75.00 left</div>
+<div class="text-wrapper-14" >$40.00 left</div>
+<div class="text-wrapper-15" >$54.50 left</div>
+<div class="text-wrapper-16" >$65.00 left</div>
+<div class="text-wrapper-17" >Food</div>
+<div class="text-wrapper-18" >School</div>
+<div class="text-wrapper-19" >Shopping</div>
+<div class="text-wrapper-20" >Other</div>
+<div class="text-wrapper-21" >Entertainment</div>
+<div class="text-wrapper-22" >Weekly Spending</div>
+<div class="text-wrapper-23" >Category Budgets</div>
+<img class="line" src="img/line-3.svg" />
+<img class="img" src="img/line-5.svg" />
+<img class="line-2" src="img/line-6.svg" />
+<img class="line-3" src="img/line-7.svg" />
+<img class="line-4" src="img/line-4.svg" />
+<img class="line-5" src="img/line-13.svg" />
+<img class="line-6" src="img/line-14.svg" />
+<div class="text-wrapper-24" >$185.00</div>
+<div class="text-wrapper-25" >12</div>
+<div class="text-wrapper-26" >$38.20</div>
+<div class="rectangle-wrapper" ><div class="rectangle-4" ></div></div>
+<div class="group-3" ><div class="rectangle-5" ></div></div>
+<div class="group-4" ><div class="rectangle-6" ></div></div>
+<div class="group-5" ><div class="rectangle-7" ></div></div>
+<div class="group-6" ><div class="rectangle-8" ></div>
+<div class="rectangle-9" ></div></div>
+<div class="group-7" ><div class="rectangle-10" ></div></div>
+<img class="image" src="img/image-4.png" />
+<img class="image-2" src="img/image-5.png" />
+<div class="group-8" ><div class="rectangle-11" ></div>
+<div class="text-wrapper-27" >Food</div>
+<div class="text-wrapper-28" >Food</div>
+<div class="text-wrapper-29" >Food</div>
+<div class="text-wrapper-30" >Food</div>
+<div class="text-wrapper-31" >Food</div>
+<div class="text-wrapper-32" >Food</div>
+<div class="text-wrapper-33" >Oct 8</div>
+<div class="text-wrapper-34" >Oct 1</div>
+<div class="text-wrapper-35" >Sep 21</div>
+<div class="text-wrapper-36" >Sep 14</div>
+<div class="text-wrapper-37" >Aug 28</div>
+<div class="text-wrapper-38" >Aug 10</div>
+<div class="text-wrapper-39" >Chick-fil-A</div>
+<div class="text-wrapper-40" >-$10.50</div>
+<div class="text-wrapper-41" >-$8.50</div>
+<div class="text-wrapper-42" >-$7.75</div>
+<div class="text-wrapper-43" >-$6.99</div>
+<div class="text-wrapper-44" >-$6.80</div>
+<div class="text-wrapper-45" >-$8.85</div>
+<div class="text-wrapper-46" >Student Union</div>
+<div class="text-wrapper-47" >Pizzahut</div>
+<div class="text-wrapper-48" >Cane’s</div>
+<div class="text-wrapper-49" >Dutch Bros Coffee</div>
+<div class="text-wrapper-50" >Starbucks</div>
+<div class="text-wrapper-51" >Recent Meal Activity</div>
+<img class="line-7" src="img/line-8.svg" />
+<img class="line-8" src="img/line-9.svg" />
+<img class="line-9" src="img/line-10.svg" />
+<img class="line-10" src="img/line-11.svg" />
+<img class="line-11" src="img/line-15.svg" />
+<img class="line-12" src="img/line-12.svg" />
+<img class="image-3" src="img/image-7.png" /></div>
+<img class="image-4" src="img/image-6.png" />
+<div class="group-9" ><div class="rectangle-12" ></div>
+<div class="rectangle-13" ></div>
+<img class="activity" src="img/activity2-1.png" />
+<img class="pie" src="img/pie-chart2-1.png" />
+<img class="house-black" src="img/house-black-silhouette-without-door1-2.png" />
+<img class="image-5" src="img/image-3.png" />
+<div class="text-wrapper-52" >Student Budget</div>
+<img class="usera" src="img/usera-1.png" />
+<div class="text-wrapper-53" >TEXAS TECH</div></div></div></div></div></div></div> -->
