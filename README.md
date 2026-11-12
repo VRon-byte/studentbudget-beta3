@@ -1,4 +1,4 @@
-# Student Budget
+# TTU Student Budget
 
 ## Team Name/Number: [Beta 3]
 
@@ -16,7 +16,37 @@ A personal-finance website that helps students create monthly budgets, understan
 
 ## Pages Implemented
 
+Page 1 - Login Page: A simple authentication screen for students to enter their Edu Email and
+Password
 
+
+Page 2 - Main Dashboard: The home page showing a greeting, total balance, quick "Add
+Expense" feature, and recent activity overview.
+
+
+Page 3 - Balance & Activity: A detailed ledger showing the current balance alongside a
+chronological list of recent transactions.
+
+
+Page 4 - Budget & Meals: A tracker specifically for monthly category budgets and university
+meal plan balances.
+
+
+Page 5 - Account Manager: A settings page where users can manage their profile, notification
+preferences, and linked bank accounts.
+
+
+Key Interactive Feature 1: Responsive navigation menu on hover.
+
+Key Interactive Feature 2: Interactive form fields for adding an expenses
+
+Key Interactive Feature 3: Toggle switches for turning email/text notifications on and off in the Account
+Manager.
+
+Key Interactive Feature 4: Visual progress bars in the Budget & Meals section that utilize CSS widths to
+represent money spent vs. remaining.
+
+Key Interactive Feature 5: Notification checkboxes and Log Out / Delete Account buttons on the profile page
 
 ## Technologies Used
 
