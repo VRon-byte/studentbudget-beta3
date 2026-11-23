@@ -3,23 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Budget - Budget & Meals</title>
+  <title>Student Budget - Budget &amp; Meals</title>
   <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="../ttu-nav.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <header class="top-nav">
-    <div class="logo-group">
-      <img src="logo.png" alt="" class="ttu-logo">
-      <div class="logo-text-group">
-        <span class="logo-text">TEXAS TECH</span>
-        <span class="logo-subtext">Student Budget</span>
+
+  <header id="main-header">
+    <div class="header-top">
+      <a class="brand-link" href="../homepage/dashboard.html">
+        <img src="../logo.png" alt="Texas Tech University Double T logo" class="ttu-logo">
+        <div class="brand-text">
+          <span class="brand-title">TEXAS TECH UNIVERSITY</span>
+          <span class="brand-subtitle">Student Budget</span>
+        </div>
+      </a>
+      <div class="user-utility">
+        <span>Logged in as: <strong>John Doe</strong></span>
+        <span class="divider" aria-hidden="true">|</span>
+        <a href="../loginpage/index.html" class="logout-link">Logout</a>
       </div>
     </div>
-    <a href="settings.html" aria-label="Account Settings">
-      <img class="profile-avatar" src="userA.png" alt="User profile settings avatar">
-    </a>
+
+    <nav id="main-nav" role="navigation" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="../homepage/dashboard.html" class="nav-link">Home</a></li>
+        <li><a href="../activitypage/activity.html" class="nav-link">Balance &amp; Activity</a></li>
+        <li><a href="../budget&mealsPage/budgetmeals.html" class="nav-link active" aria-current="page">Budget &amp; Meals</a></li>
+        <li><a href="../profilepage/profile.html" class="nav-link">My Profile</a></li>
+      </ul>
+    </nav>
   </header>
 
   <div class="page-header">
@@ -52,6 +66,7 @@
         <div class="card-header-flex">
           <img src="category.png" alt="" class="card-icon">
           <h2>Category Budgets</h2>
+          <button type="button" class="card-action-btn" aria-label="Edit category budgets">Edit</button>
         </div>
         
         <table class="category-table">
@@ -151,6 +166,8 @@
           <img src="lunch.png" alt="" class="card-icon">
           <h2>Recent Meal Activity</h2>
         </div>
+        <a href="../activitypage/activity.html" class="card-action-link">View all</a>
+        
         
         <table class="activity-table">
           <tbody>
@@ -220,18 +237,16 @@
 
     </div>
   </main>
-
-  <nav class="bottom-nav">
-    <a href="balance.html" aria-label="Go to Balance and Activity">
-      <img class="nav-icon" src="activity2.png" alt="Activity dashboard view">
-    </a>
-    <a href="budget-meals.html" aria-label="Go to Budget and Meals">
-      <img class="nav-icon" src="pie-chart1.png" alt="Budget breakdown overview">
-    </a>
-    <a href="dashboard.html" aria-label="Go to Dashboard">
-      <img class="nav-icon" src="house-black-silhouette-without-door1.png" alt="Dashboard home screen">
-    </a>
-  </nav>
+<footer id="main-footer" role="contentinfo">
+    <div class="footer-content">
+      <p class="footer-copy">&copy; 2026 Beta3. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="../profilepage/profile.html#help" class="footer-link">Help</a></li>
+        <li><a href="../profilepage/profile.html#terms" class="footer-link">Terms &amp; Conditions</a></li>
+        <li><a href="#main-header" class="footer-link">Back to Top</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
 <!--

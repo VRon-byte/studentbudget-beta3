@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Texas Tech | Student Budget</title>
-  <link rel="stylesheet" href="style.css" />
-  <!--<script src="https://unpkg.com/lucide@latest" defer></script>-->
-  <!--<script src="script.js" defer></script>-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Budget - My Profile</title>
+  <link rel="stylesheet" href="../ttu-nav.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <img src="images/texastech.png" alt="Texas Tech Logo" class="tech-logo">
-    <!--
-    <div class="brand">
-      <div class="tech-mark" aria-label="Texas Tech logo">T<span>T</span></div>
-      <div>
-        <div class="brand-name">TEXAS TECH</div>
-        <div class="brand-subtitle">Student Budget</div>
+
+  <header id="main-header">
+    <div class="header-top">
+      <a class="brand-link" href="../homepage/dashboard.html">
+        <img src="../logo.png" alt="Texas Tech University Double T logo" class="ttu-logo">
+        <div class="brand-text">
+          <span class="brand-title">TEXAS TECH UNIVERSITY</span>
+          <span class="brand-subtitle">Student Budget</span>
+        </div>
+      </a>
+      <div class="user-utility">
+        <span>Logged in as: <strong>John Doe</strong></span>
+        <span class="divider" aria-hidden="true">|</span>
+        <a href="../loginpage/index.html" class="logout-link">Logout</a>
       </div>
     </div>
-    -->
-    <button class="icon-button profile-shortcut" aria-label="Profile">
-      <!--<i data-lucide="circle-user-round"></i>-->
-      <img src="images/usericon.png" alt="Profile Button" class="profile-button">
-    </button>
+
+    <nav id="main-nav" role="navigation" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="../homepage/dashboard.html" class="nav-link">Home</a></li>
+        <li><a href="../activitypage/activity.html" class="nav-link">Balance &amp; Activity</a></li>
+        <li><a href="../budget&mealsPage/budgetmeals.html" class="nav-link">Budget &amp; Meals</a></li>
+        <li><a href="../profilepage/profile.html" class="nav-link active" aria-current="page">My Profile</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -87,21 +96,17 @@
       </div>
     </section>
   </main>
+  <footer id="main-footer" role="contentinfo">
+    <div class="footer-content">
+      <p class="footer-copy">&copy; 2026 Beta3. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="../profilepage/profile.html#help" class="footer-link">Help</a></li>
+        <li><a href="../profilepage/profile.html#terms" class="footer-link">Terms &amp; Conditions</a></li>
+        <li><a href="#main-header" class="footer-link">Back to Top</a></li>
+      </ul>
+    </div>
+  </footer>
 
-  <nav class="bottom-nav" aria-label="Main navigation">
-    <button class="nav-item active" aria-label="Home" title="Home">
-      <!--<i data-lucide="house"></i>-->
-      <img src="images/home.png" alt="Home" class="home-button">
-    </button>
-    <button class="nav-item" aria-label="Transactions" title="Transactions">
-      <!--<i data-lucide="list"></i>-->
-      <img src="images/budget.png" alt="Budget" class="budget-button">
-    </button>
-    <button class="nav-item" aria-label="Budget analytics" title="Budget analytics">
-      <!--<i data-lucide="chart-pie"></i>-->
-      <img src="images/chart.png" alt="Chart" class="chart-button">
-    </button>
-  </nav>
   <!--
   <dialog id="message-dialog">
     <p id="dialog-message"></p>
