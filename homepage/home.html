@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Budget - Home</title>
+  <link rel="stylesheet" href="../ttu-nav.css">
+  <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="header-top">
+      <a class="brand-link" href="../homepage/home.html">
+        <img src="../logo.png" alt="Texas Tech University Double T logo" class="ttu-logo">
+        <div class="brand-text">
+          <span class="brand-title">TEXAS TECH UNIVERSITY</span>
+          <span class="brand-subtitle">Student Budget</span>
+        </div>
+      </a>
+      <div class="user-utility">
+        <span>Logged in as: <strong>John Doe</strong></span>
+        <span class="divider" aria-hidden="true">|</span>
+        <a href="../index.html" class="logout-link">Logout</a>
+      </div>
+    </div>
+
+    <nav id="main-nav" role="navigation" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="../homepage/home.html" class="nav-link active" aria-current="page">Home</a></li>
+        <li><a href="../activitypage/activity.html" class="nav-link">Balance &amp; Activity</a></li>
+        <li><a href="../budget&mealsPage/budgetmeals.html" class="nav-link">Budget &amp; Meals</a></li>
+        <li><a href="../profilepage/profile.html" class="nav-link">My Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home-main" role="main">
+    <!-- Welcome Banner -->
+    <section class="welcome-banner" aria-labelledby="welcome-heading">
+      <h1 id="welcome-heading">Good Afternoon, John.</h1>
+      <p class="welcome-subtitle">Stay on track. Build your future.</p>
+    </section>
+
+    <!-- Total Balance Card -->
+    <section class="balance-card" aria-label="Account balance summary">
+      <div class="balance-top">
+        <span class="balance-label">Total Balance</span>
+        <p class="balance-total">$1,250.00</p>
+      </div>
+      <div class="balance-split">
+        <div class="balance-item">
+          <span class="balance-label">Available Balance</span>
+          <span class="balance-amount">$920.50</span>
+        </div>
+        <div class="balance-item balance-item-right">
+          <span class="balance-label">Meal Balance</span>
+          <span class="balance-amount">$185.40</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Action Buttons -->
+    <section class="quick-actions" aria-label="Quick balance actions">
+      <button type="button" class="action-btn btn-expense">+ Add Expense</button>
+      <button type="button" class="action-btn btn-money">+ Add Money</button>
+    </section>
+
+    <!-- Recent Activity Table -->
+    <section class="card activity-card" aria-labelledby="recent-activity-heading">
+      <div class="card-header-flex">
+        <h2 id="recent-activity-heading">Recent Activity</h2>
+        <a href="../activitypage/activity.html" class="card-action-link">View all</a>
+      </div>
+
+      <table class="activity-table">
+        <tbody>
+          <tr>
+            <th scope="row">
+              <div class="vendor">Chick-fil-A</div>
+              <div class="sub-label">Food</div>
+            </th>
+            <td class="expense-cell">
+              <div class="expense">-$10.50</div>
+              <div class="date-label">Oct 8</div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <div class="vendor">Student Union</div>
+              <div class="sub-label">Food</div>
+            </th>
+            <td class="expense-cell">
+              <div class="expense">-$8.50</div>
+              <div class="date-label">Oct 1</div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <div class="vendor">Starbucks</div>
+              <div class="sub-label">Food</div>
+            </th>
+            <td class="expense-cell">
+              <div class="expense">-$7.75</div>
+              <div class="date-label">Sep 21</div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <div class="vendor">Pizzahut</div>
+              <div class="sub-label">Food</div>
+            </th>
+            <td class="expense-cell">
+              <div class="expense">-$6.99</div>
+              <div class="date-label">Sep 14</div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <div class="vendor">Cane's</div>
+              <div class="sub-label">Food</div>
+            </th>
+            <td class="expense-cell">
+              <div class="expense">-$6.80</div>
+              <div class="date-label">Aug 28</div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <div class="vendor">Dutch Bros Coffee</div>
+              <div class="sub-label">Food</div>
+            </th>
+            <td class="expense-cell">
+              <div class="expense">-$8.85</div>
+              <div class="date-label">Aug 10</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer id="main-footer" role="contentinfo">
+    <div class="footer-content">
+      <p class="footer-copy">&copy; 2026 Beta3. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="../profilepage/profile.html#help" class="footer-link">Help</a></li>
+        <li><a href="../profilepage/profile.html#terms" class="footer-link">Terms &amp; Conditions</a></li>
+        <li><a href="#main-header" class="footer-link">Back to Top</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
